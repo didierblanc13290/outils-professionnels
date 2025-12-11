@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>ProTools – Outils à main professionnels</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Outils à main professionnels pour menuisiers, artisans et bricoleurs exigeants. Sélection pro, livraison rapide, garantie à vie." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="cart-drawer" class="cart-drawer">
+    <div class="cart-drawer__header">
+      <h2>Votre panier</h2>
+      <button class="cart-drawer__close" aria-label="Fermer le panier">&times;</button>
+    </div>
+    <div class="cart-drawer__items" data-cart-items></div>
+    <div class="cart-drawer__footer">
+      <div class="cart-drawer__total">
+        <span>Total :</span>
+        <span data-cart-total>0,00 €</span>
+      </div>
+      <button class="btn btn-primary btn-full" type="button">Passer la commande</button>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">ProTools</div>
+      <nav class="main-nav">
+        <a href="#home">Accueil</a>
+        <a href="#about">À propos</a>
+        <a href="#products">Boutique</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="cart-button" data-cart-trigger>
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count" data-cart-count>0</span>
+      </button>
+    </div>
+  </header>
+
+  <section id="home" class="hero fade">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Outils à main professionnels pour chaque tâche</h1>
+        <p>Des outils de qualité premium, plébiscités par les pros du monde entier. Des assortiments de visserie aux jeux de clés robustes.</p>
+        <div class="hero-actions">
+          <a href="#products" class="btn btn-primary">Voir les produits</a>
+          <a href="#about" class="btn btn-secondary">Découvrir ProTools</a>
+        </div>
+        <ul class="hero-benefits">
+          <li><i class="fas fa-shipping-fast"></i> Livraison gratuite dès 50 €</li>
+          <li><i class="fas fa-shield-alt"></i> Garantie à vie</li>
+          <li><i class="fas fa-medal"></i> Qualité supérieure</li>
+        </ul>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=800&h=600&fit=crop" alt="Atelier professionnel avec outils à main" />
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section about fade">
+    <div class="container about-inner">
+      <div class="about-text">
+        <h2>À propos de ProTools</h2>
+        <p>Avec plus de 30 ans d’expérience dans l’industrie des outils à main, ProTools est devenu le nom de confiance des professionnels comme des passionnés de bricolage.</p>
+        <p>Notre vaste sélection comprend tout, des coffrets de tournevis de précision aux collections de clés robustes. Chaque outil est soigneusement sélectionné et testé pour répondre aux plus hauts standards de qualité et de performance.</p>
+        <div class="about-stats">
+          <div><span>500+</span><small>Outils disponibles</small></div>
+          <div><span>50K+</span><small>Clients satisfaits</small></div>
+          <div><span>30+</span><small>Années d’expérience</small></div>
+        </div>
+      </div>
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1530728327726-b504480e42f2?w=800&h=600&fit=crop" alt="Établi d'atelier avec outils" />
+      </div>
+    </div>
+  </section>
+
+  <section id="products" class="section products">
+    <div class="container">
+      <div class="products-header fade">
+        <h2>Produits phares – Sélection menuiserie pro</h2>
+        <p>Une sélection d’outils fiables pour menuisiers, artisans et professionnels exigeants.</p>
+      </div>
+
+      <div class="products-grid">
+        <!-- 10 cartes produits -->
+        
+    <article class="product-card fade" data-product-id="1">
+      <div class="product-card__image">
+        <div class="product-icon icon-screws">
+          <i class="fas fa-screwdriver-wrench"></i>
+        </div>
+        <span class="product-card__badge">Meilleure vente</span>
+      </div>
+      <div class="product-card__content">
+        <div class="product-card__rating">
+          <span class="product-card__rating-stars">★★★★★</span>
+          <span>4,6/5 (132 avis)</span>
+        </div>
+        <h3 class="product-card__title">Coffret de tournevis de précision 40 pièces</h3>
+        <p class="product-card__description">Kit de tournevis de précision avec embouts Torx, Phillips et plats. Idéal pour l’électronique et les petites réparations.</p>
+        <div class="product-card__price" data-price="2999">29.99 €</div>
+        <div class="product-card__actions">
+          <button class="btn btn-primary btn-add-to-cart">Ajouter</button>
+          <button class="btn btn-ghost">Détails</button>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="product-card fade" data-product-id="2">
+      <div class="product-card__image">
+        <div class="product-icon icon-extractor">
+          <i class="fas fa-bolt"></i>
+        </div>
+        <span class="product-card__badge">Nouveau</span>
+      </div>
+      <div class="product-card__content">
+        <div class="product-card__rating">
+          <span class="product-card__rating-stars">★★★★★</span>
+          <span>4,6/5 (98 avis)</span>
+        </div>
+        <h3 class="product-card__title">Jeu d’extracteurs de vis endommagées</h3>
+        <p class="product-card__description">Retirez facilement les vis foirées, endommagées ou rouillées. Indispensable dans toute boîte à outils.</p>
+        <div class="product-card__price" data-price="1999">19.99 €</div>
+        <div class="product-card__actions">
+          <button class="btn btn-primary btn-add-to-cart">Ajouter</button>
+          <button class="btn btn-ghost">Détails</button>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="product-card fade" data-product-id="3">
+      <div class="product-card__image">
+        <div class="product-icon icon-knife">
+          <i class="fas fa-knife-kitchen"></i>
+        </div>
+        
+      </div>
+      <div class="product-card__content">
+        <div class="product-card__rating">
+          <span class="product-card__rating-stars">★★★★☆</span>
+          <span>4,4/5 (87 avis)</span>
+        </div>
+        <h3 class="product-card__title">Couteau de poche pliant</h3>
+        <p class="product-card__description">Couteau EDC compact avec lame de 1,34 pouces, en acier inoxydable, avec verrou de sécurité.</p>
+        <div class="product-card__price" data-price="1499">14.99 €</div>
+        <div class="product-card__actions">
+          <button class="btn btn-primary btn-add-to-cart">Ajouter</button>
+          <button class="btn btn-ghost">Détails</button>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="product-card fade" data-product-id="4">
+      <div class="product-card__image">
+        <div class="product-icon icon-lamp">
+          <i class="fas fa-lightbulb"></i>
+        </div>
+        <span class="product-card__badge">Populaire</span>
+      </div>
+      <div class="product-card__content">
+        <div class="product-card__rating">
+          <span class="product-card__rating-stars">★★★★★</span>
+          <span>4,7/5 (201 avis)</span>
+        </div>
+        <h3 class="product-card__title">Lampe LED télescopique magnétique</h3>
+        <p class="product-card__description">Lampe de travail extensible avec aimant puissant et LED lumineuse. S’étend jusqu’à 56 cm.</p>
+        <div class="product-card__price" data-price="2499">24.99 €</div>
+        <div class="product-card__actions">
+          <button class="btn btn-primary btn-add-to-cart">Ajouter</button>
+          <button class="btn btn-ghost">Détails</button>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="product-card fade" data-product-id="5">
+      <div class="product-card__image">
+        <div class="product-icon icon-pen">
+          <i class="fas fa-pen-ruler"></i>
+        </div>
+        
+      </div>
+      <div class="product-card__content">
+        <div class="product-card__rating">
+          <span class="product-card__rating-stars">★★★★☆</span>
+          <span>4,5/5 (76 avis)</span>
+        </div>
+        <h3 class="product-card__title">Stylo multitool 9-en-1</h3>
+        <p class="product-card__description">Stylo outil avec tournevis, règle, stylet, niveau à bulle et plus encore. Parfait comme gadget EDC.</p>
+        <div class="product-card__price" data-price="1799">17.99 €</div>
+        <div class="product-card__actions">
+          <button class="btn btn-primary btn-add-to-cart">Ajouter</button>
+          <button class="btn btn-ghost">Détails</button>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="product-card fade" data-product-id="6">
+      <div class="product-card__image">
+        <div class="product-icon icon-wrench">
+          <i class="fas fa-wrench"></i>
+        </div>
+        <span class="product-card__badge">Best-seller</span>
+      </div>
+      <div class="product-card__content">
+        <div class="product-card__rating">
+          <span class="product-card__rating-stars">★★★★★</span>
+          <span>4,8/5 (312 avis)</span>
+        </div>
+        <h3 class="product-card__title">Clé universelle ajustable</h3>
+        <p class="product-card__description">Clé auto-ajustable compatible avec les tailles standard. Design à double extrémité très polyvalent.</p>
+        <div class="product-card__price" data-price="3499">34.99 €</div>
+        <div class="product-card__actions">
+          <button class="btn btn-primary btn-add-to-cart">Ajouter</button>
+          <button class="btn btn-ghost">Détails</button>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="product-card fade" data-product-id="7">
+      <div class="product-card__image">
+        <div class="product-icon icon-sockets">
+          <i class="fas fa-gears"></i>
+        </div>
+        
+      </div>
+      <div class="product-card__content">
+        <div class="product-card__rating">
+          <span class="product-card__rating-stars">★★★★★</span>
+          <span>4,7/5 (89 avis)</span>
+        </div>
+        <h3 class="product-card__title">Coffret de douilles à impact 43 pièces</h3>
+        <p class="product-card__description">Coffret de douilles SAE et métriques 3/8" en acier chrome-vanadium haute résistance.</p>
+        <div class="product-card__price" data-price="8999">89.99 €</div>
+        <div class="product-card__actions">
+          <button class="btn btn-primary btn-add-to-cart">Ajouter</button>
+          <button class="btn btn-ghost">Détails</button>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="product-card fade" data-product-id="8">
+      <div class="product-card__image">
+        <div class="product-icon icon-cutter">
+          <i class="fas fa-scissors"></i>
+        </div>
+        
+      </div>
+      <div class="product-card__content">
+        <div class="product-card__rating">
+          <span class="product-card__rating-stars">★★★★☆</span>
+          <span>4,5/5 (64 avis)</span>
+        </div>
+        <h3 class="product-card__title">Cutter utilitaire robuste</h3>
+        <p class="product-card__description">Cutter rétractable tout en métal avec changement de lame rapide. 10 lames de rechange incluses.</p>
+        <div class="product-card__price" data-price="1299">12.99 €</div>
+        <div class="product-card__actions">
+          <button class="btn btn-primary btn-add-to-cart">Ajouter</button>
+          <button class="btn btn-ghost">Détails</button>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="product-card fade" data-product-id="9">
+      <div class="product-card__image">
+        <div class="product-icon icon-caulk">
+          <i class="fas fa-water"></i>
+        </div>
+        
+      </div>
+      <div class="product-card__content">
+        <div class="product-card__rating">
+          <span class="product-card__rating-stars">★★★★☆</span>
+          <span>4,4/5 (121 avis)</span>
+        </div>
+        <h3 class="product-card__title">Outil de finition silicone 3-en-1</h3>
+        <p class="product-card__description">Outil de finition de joints avec tête inox. Idéal pour salle de bain, cuisine et fenêtres.</p>
+        <div class="product-card__price" data-price="999">9.99 €</div>
+        <div class="product-card__actions">
+          <button class="btn btn-primary btn-add-to-cart">Ajouter</button>
+          <button class="btn btn-ghost">Détails</button>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="product-card fade" data-product-id="10">
+      <div class="product-card__image">
+        <div class="product-icon icon-stone">
+          <i class="fas fa-gem"></i>
+        </div>
+        
+      </div>
+      <div class="product-card__content">
+        <div class="product-card__rating">
+          <span class="product-card__rating-stars">★★★★★</span>
+          <span>4,8/5 (54 avis)</span>
+        </div>
+        <h3 class="product-card__title">Set de pierres d’affûtage double grain</h3>
+        <p class="product-card__description">Kit complet d’affûtage avec pierres 400/1000 et 3000/8000, plus cuir d’affûtage.</p>
+        <div class="product-card__price" data-price="4999">49.99 €</div>
+        <div class="product-card__actions">
+          <button class="btn btn-primary btn-add-to-cart">Ajouter</button>
+          <button class="btn btn-ghost">Détails</button>
+        </div>
+      </div>
+    </article>
+    
+      </div>
+    </div>
+  </section>
+
+  <section class="section trust fade">
+    <div class="container">
+      <h2>Pourquoi choisir ProTools ?</h2>
+      <div class="trust-grid">
+        <div class="trust-item">
+          <i class="fas fa-award"></i>
+          <h3>Qualité premium</h3>
+          <p>Matériaux sélectionnés et fabrication rigoureuse pour une durée de vie maximale.</p>
+        </div>
+        <div class="trust-item">
+          <i class="fas fa-shield-alt"></i>
+          <h3>Garantie à vie</h3>
+          <p>Tout outil défectueux lié à un défaut de fabrication est remplacé.</p>
+        </div>
+        <div class="trust-item">
+          <i class="fas fa-shipping-fast"></i>
+          <h3>Livraison rapide</h3>
+          <p>Expédition sous 24/48h et livraison offerte dès 50 € d’achat.</p>
+        </div>
+        <div class="trust-item">
+          <i class="fas fa-headset"></i>
+          <h3>Support pro</h3>
+          <p>Conseils d’experts pour choisir l’outil adapté à votre métier.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" class="footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <h3>ProTools</h3>
+        <p>Votre partenaire outils à main professionnels depuis 1994.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>+33 1 23 45 67 89<br />contact@protools.fr</p>
+      </div>
+      <div class="footer-col">
+        <h4>Partenaire</h4>
+        <a href="https://www.gdmdesign.fr/" target="_blank" rel="noopener">GDM Design</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 ProTools – Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
